@@ -1,0 +1,365 @@
+body {
+  margin: 0;
+  font-family: "Roboto", serif;
+}
+.container {
+  width: 80%;
+  margin: auto;
+}
+.clear-fix {
+  clear: both;
+}
+/* ---------------------------------------------------------------------------------------------------------------------------------- */
+
+.home-section {
+  background-image: url(../images/header.jpeg);
+  height: 100vh;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+.home-content {
+  color: white;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.layer {
+  background-color: rgba(0, 0, 0, 0.593);
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+.home-section H1 {
+  color: tomato;
+  font-size: 70px;
+  font-weight: 600px;
+  margin: 0;
+}
+.home-section H3 {
+  font-size: 24px;
+  margin: 0;
+}
+.home-section H4 {
+  font-size: 26px;
+  margin: 0;
+  font-weight: 200px;
+}
+
+/* ---------------------------------------------------------------------------------------------------------------------------------- */
+.navbar {
+  background: rgb(74, 74, 74);
+  position: fixed;
+  z-index: 999;
+  width: 100%;
+}
+
+.navbar h3 {
+  float: left;
+  color: tomato;
+  font-size: 25px;
+  font-weight: 800px;
+}
+
+.navbar .list {
+  float: right;
+  padding: 10px;
+}
+.navbar .list ul li {
+  display: inline-block;
+  text-decoration: none;
+  margin: 0 14px;
+  font-size: 15px;
+}
+.navbar .list ul a {
+  color: white;
+  text-decoration: none;
+  font-weight: 400;
+  transition: all 1s;
+}
+
+.navbar .list ul a:hover {
+  color: tomato;
+}
+/* ---------------------------------------------------------------------------------------------------------------------------------- */
+.about {
+  padding: 80px 0;
+}
+.about .about-image {
+  width: 30%;
+  float: left;
+  padding-left: 70px;
+}
+.about .image-boreder {
+  border-radius: 10px;
+  border: 9px solid gray;
+}
+.about .image {
+  position: relative;
+  top: 30px;
+  left: 40px;
+}
+
+.about-image img {
+  width: 100%;
+}
+.layerr {
+  background-color: rgba(128, 128, 128, 0.692);
+  position: absolute;
+  top: 100%;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  transition: all 1s;
+}
+.about .image:hover .layerr {
+  top: 0;
+}
+
+.about-content {
+  float: right;
+  width: 50%;
+}
+.about-content h4 {
+  color: tomato;
+  font-size: 34px;
+  margin: 0;
+  position: relative;
+}
+.about-content h4::before {
+  content: "";
+  position: absolute;
+  background-color: tomato;
+  top: 5px;
+  left: -14px;
+  width: 6px;
+  height: 30px;
+}
+
+.about-content p {
+  color: rgb(0, 0, 0);
+  line-height: 25px;
+  padding-bottom: 30px;
+  border-bottom: 2px dashed tomato;
+}
+
+.detalis .data {
+  float: left;
+  margin-right: 50px;
+}
+
+.detalis .data h3 {
+  color: rgb(0, 0, 0);
+  font-weight: 700;
+}
+.detalis .data span {
+  color: rgb(113, 112, 112);
+  font-weight: 700;
+}
+
+.about .button button {
+  color: white;
+  background-color: tomato;
+  margin: 0px 40px;
+  border: none;
+  padding: 13px 20px;
+  font-size: 17px;
+  border-radius: 5px;
+  margin: 10px;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+.about .button button:hover {
+  background-color: rgb(236, 36, 3);
+}
+.button i {
+  margin: 0 10px;
+}
+/* ---------------------------------------------------------------------------------------------------------------------------------- */
+.OUR-service{
+background-color: #f1f1f1;
+  padding:  60px 0;
+
+}
+
+
+.cardds{
+  
+margin-left:15%;
+padding: 10px 20px;
+}
+.cardd{
+  width: 18%;
+  margin-right: 30px;
+
+  background-color: rgb(241, 241, 241);
+  padding:  20px;
+  margin-top: 50px;
+  text-align: center;
+float: left;
+} 
+.cardd:hover{background: white};
+
+/* ---------------------------------------------------------------------------------------------------------------------------------- */
+.portfolio {
+  padding: 60px 0;
+}
+.title {
+  width: fit-content;
+  margin: auto;
+  position: relative;
+}
+.title h3 {
+  font-size: 40px;
+}
+
+.title::before {
+  content: "";
+  width: 70%;
+  position: absolute;
+  right: 40px;
+  bottom: -15%;
+  height: 2px;
+  background-color: tomato;
+}
+.title::after {
+  content: "";
+  width: 45%;
+  position: absolute;
+  right: 70px;
+  border-top: 2px solid tomato;
+  border-bottom: 2px solid tomato;
+  height: 10px;
+  bottom: -25%;
+}
+
+.portfolio ul li {
+  display: inline-block;
+  margin: 0 20px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+.portfolio ul {
+  text-align: center;
+}
+
+.portfolio .card {
+  width: 30%;
+  float: left;
+  position: relative;
+  margin-right: 30px;
+  margin-bottom: 20px;
+}
+.portfolio .card img {
+  width: 100%;
+}
+.portfolio .layer {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  top: 0;
+  right: 0;
+  background-color: rgba(128, 128, 128, 0.663);
+  opacity: 0;
+}
+.portfolio .layer:hover {
+  opacity: 1;
+}
+
+/* ---------------------------------------------------------------------------------------------------------------------------------- */
+.feedback {
+  padding: 60px 0px;
+  height: 50%;
+}
+
+.feedback .class {
+  width: 65%;
+  margin: auto;
+  background-color: rgb(241, 241, 241);
+  padding: 30px 40px;
+  margin-top: 50px;
+  position: relative;
+}
+.feedback .imag {
+  float: left;
+  width: 20%;
+  position: relative;
+z-index:3242 ;
+}
+.feedback .CONTENT {
+  width: 80%;
+  float: left;
+}
+.feedback .imag img {
+  border-radius: 50%;
+  height: 130px;
+  width: 130px;
+
+}
+.feedback .CONTENT h1 {
+  color-scheme: #333;
+  font-weight: 600px;
+  font-size: 30px;
+  margin-bottom: 5px;
+}
+.feedback .CONTENT h5 {
+  color-scheme: #777;
+  font-weight: 600px;
+  font-size: 15px;
+  margin: 0;
+}
+.feedback .border{
+    position: absolute;
+    left: 0;
+    top: 0;
+    border: 80px solid ;
+    border-color:#ff305b transparent transparent #ff305b;
+}
+
+
+.contact{
+    padding: 60px 0;
+}
+.contact form{
+    width: 65%;
+    margin: auto;
+}
+.contact .name{
+     width: 48%;
+     float: right;
+}
+.contact .EMAIL{
+    width: 48%;
+    float: left;
+}
+.contact .subject{
+ margin: 20px 0;
+}
+
+.contact input{
+width: 100%;
+height: 40px;
+border: 3px solid black;
+border-radius: 5px;
+padding: 6px 12px;
+}
+.contact textarea{
+    width: 100%;
+    height: 80px;
+    border: 3px solid black;
+    border-radius: 5px;
+    padding: 6px 12px;
+  
+    }
+    .contact button{
+        background-color: tomato;
+        color: white;
+        padding: 12px 20px;
+        border: none;
+        border-radius: 5px;
+        margin-top: 20px;
+    }
